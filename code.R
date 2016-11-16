@@ -1,7 +1,6 @@
 library("rvest")
 library("purrr")
 library("ggplot2")
-library("ggrepel")
 
 # Function for getting info for each task
 get_info <- function(task){
