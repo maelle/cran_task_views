@@ -1,44 +1,26 @@
-library("rvest")
-library("purrr")
+library("dplyr")
+library("ctv")
 library("ggplot2")
 
-# Function for getting info for each task
-get_info <- function(task){
-  print(task)
-  page <- read_html(paste0("https://cran.r-project.org/web/views/", task, ".html"))
-  page <- page %>%
-    html_node("table") %>%
-    html_table(header = FALSE)
-  
-  contact <- page$X2[1]
-  version <- lubridate::ymd(page$X2[3])
-  
-  data.frame(contact = contact,
-             version = version)
-  
-}
+library("ctv")
 
+# get views
+a <- available.views()
 
-# Get all tasks
-tasks <- read_html("https://cran.r-project.org/web/views/")
-tasks <- tasks %>%
-  html_node("table") %>%
-  html_table(header = FALSE)
-tasks <- tibble::as_tibble(tasks)
+tasks <- data.frame(
+  name = vapply(a, "[[", character(1), "name"),
+  version = vapply(a, "[[", character(1), "version"),
+  maintainer = vapply(a, "[[", character(1), "maintainer"),
+  stringsAsFactors = FALSE
+)
 
-
-# Adds info
-tasks <- tasks %>% by_row(function(x){
-  get_info(x$X1)
-})
-
-tasks <- tidyr::unnest(tasks, .out)
+tasks <- mutate(tasks, version = lubridate::ymd(version))
 
 # Plot
 tasks %>%
   dplyr::mutate(y = 1:nrow(tasks)) %>%
 ggplot() +
-  geom_label(aes(x = version, y = y , label = X1)) +
+  geom_label(aes(x = version, y = y , label = name)) +
   ylab("") +
   xlim(c(min(tasks$version, na.rm = TRUE), 
          max(tasks$version, na.rm = TRUE) + 10))+ theme(

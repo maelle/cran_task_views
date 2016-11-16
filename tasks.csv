@@ -1,0 +1,37 @@
+X1;X2;contact;version;n_authors;n_male;n_female
+Bayesian;Bayesian Inference;Jong Hee Park;19/09/2016;1;1;
+ChemPhys;Chemometrics and Computational Physics;Katharine Mullen;24/08/2016;1;1;
+ClinicalTrials;Clinical Trial Design, Monitoring, and Analysis;Ed Zhang and Harry G. Zhang;18/08/2016;2;2;
+Cluster;Cluster Analysis & Finite Mixture Models;Friedrich Leisch and Bettina Gruen;19/10/2016;2;1;1
+DifferentialEquations;Differential Equations;Karline Soetaert and Thomas Petzoldt;03/07/2015;2;1;1
+Distributions;Probability Distributions;Christophe Dutang;14/11/2016;1;1;
+Econometrics;Econometrics;Achim Zeileis;15/11/2016;1;1;
+Environmetrics;Analysis of Ecological and Environmental Data;Gavin Simpson;09/09/2016;1;1;
+ExperimentalDesign;Design of Experiments (DoE) & Analysis of Experimental Data;Ulrike Groemping;18/08/2016;1;;1
+ExtremeValue;Extreme Value Analysis;Christophe Dutang, Kevin Jaunatre;NA;2;2;
+Finance;Empirical Finance;Dirk Eddelbuettel;25/10/2016;1;1;
+Genetics;Statistical Genetics;Giovanni Montana;29/05/2015;1;1;
+Graphics;Graphic Displays & Dynamic Graphics & Graphic Devices & Visualization;Nicholas Lewin-Koh;07/01/2015;1;1;
+HighPerformanceComputing;High-Performance and Parallel Computing with R;Dirk Eddelbuettel;10/10/2016;1;1;
+MachineLearning;Machine Learning & Statistical Learning;Torsten Hothorn;24/06/2016;1;1;
+MedicalImaging;Medical Image Analysis;Brandon Whitcher;16/08/2016;1;1;
+MetaAnalysis;Meta-Analysis;Michael Dewey;12/10/2016;1;1;
+Multivariate;Multivariate Statistics;Paul Hewson;01/07/2015;1;1;
+NaturalLanguageProcessing;Natural Language Processing;Fridolin Wild, Knowledge Media Institute (KMi), The Open University, UK;09/11/2015;1;1;
+NumericalMathematics;Numerical Mathematics;Hans W. Borchers;01/11/2016;1;1;
+OfficialStatistics;Official Statistics & Survey Methodology;Matthias Templ;28/06/2016;1;1;
+Optimization;Optimization and Mathematical Programming;"Stefan Theussl and 
+    Hans W. Borchers";18/10/2016;1;1;
+Pharmacokinetics;Analysis of Pharmacokinetic Data;Suzette Blanchard;03/07/2015;1;;1
+Phylogenetics;Phylogenetics, Especially Comparative Methods;Brian O'Meara;18/08/2016;1;1;
+Psychometrics;Psychometric Models and Methods;Patrick Mair;11/11/2016;1;1;
+ReproducibleResearch;Reproducible Research;Max Kuhn;03/12/2015;1;1;
+Robust;Robust Statistical Methods;Martin Maechler;29/08/2016;1;1;
+SocialSciences;Statistics for the Social Sciences;John Fox;18/08/2016;1;1;
+Spatial;Analysis of Spatial Data;Roger Bivand;07/09/2016;1;1;
+SpatioTemporal;Handling and Analyzing Spatio-Temporal Data;Edzer Pebesma;18/08/2016;1;1;
+Survival;Survival Analysis;Arthur Allignol and Aurelien Latouche;07/10/2016;2;2;
+TimeSeries;Time Series Analysis;Rob J Hyndman;01/11/2016;1;1;
+WebTechnologies;Web Technologies and Services;Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud;18/08/2016;5;5;
+gR;gRaphical Models in R;Soren Hojsgaard;26/02/2016;1;1;
+;;;;43;39;4
